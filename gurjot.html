@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+<script> 
+$(document).ready(function(){
+    $("#Out").click(function(){
+        $("div").fadeOut();
+		
+    });
+	
+	$("#in").click(function(){
+        $("div").fadeIn();
+		
+    });
+	
+	$("#colour").click(function(){
+      $("#p1").css("color", "red");
+    });
+	
+	
+	$("#up").click(function(){
+        $("p").slideUp();
+    });
+    $("#down").click(function(){
+        $("p").slideDown();
+    });
+	
+});
+
+</script> 
+</head>
+<body background="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg">
+
+<button class="button"; id="Out">Hide</button>
+<button class="button"; id="in">Show</button>
+
+<button class="button"; id="up">Up</button>
+<button class="button"; id="down">Down</button>
+<button class="button"; id="colour">Change colour</button>
+
+
+<p>
+<center>
+<h3>Name: Gurjot Singh</h3>
+<h3>Student id: 731101</h3>
+<p id="p1"><b>CPCM Group 3</b></p>
+</p>
+<div style="background:#000080;height:100px;width:3000px;position:absolute;"></div>
+<br/ ><br/ ><br/ ><br/ ><br/ ><br/ ><br/ >
+
+</br>
+
+
+</body>
+</html>
